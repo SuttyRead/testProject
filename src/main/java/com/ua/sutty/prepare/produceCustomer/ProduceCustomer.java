@@ -36,10 +36,10 @@ public class ProduceCustomer {
     }
 
     private static void produce() throws InterruptedException {
-        Random random = new Random(100);
+        Random random = new Random();
 
         while(true){
-            queue.put(random.nextInt());
+            queue.put(random.nextInt(100));
         }
     }
     private static void customer() throws InterruptedException {
